@@ -11,6 +11,7 @@ var path = require('path'),
 /**
  * Create a article
  */
+ 
 exports.create = function (req, res) {
   var article = new Article(req.body);
   article.user = req.user;
